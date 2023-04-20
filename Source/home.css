@@ -1,0 +1,913 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    background: transparent;
+    /* border: 2px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1c1c27;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    height: 10vh;
+}
+
+nav {
+    background-color: #28293d;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-around;
+    transition: 1.5s;
+    align-items: center;
+    /* margin-bottom: 60px; */
+}
+
+nav div {
+    display: inline;
+}
+
+
+nav #logo img {
+    height: 60px;
+}
+
+
+nav ul {
+    /* display: inline; */
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 5px 8px;
+}
+
+
+nav ul li a {
+    padding: 5px 12px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-radius: 15px;
+    background: linear-gradient(to right, #ff6b4f, #fac147);
+}
+
+nav #search img {
+    /* filter: contrast(0); */
+    filter: brightness(50);
+    height: 25px;
+    padding-top: 2px;
+}
+
+
+nav #search {
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+nav #search:hover {
+    border: 1px solid rgba(252, 255, 57, 0.984);
+
+}
+
+
+nav #search input {
+    padding: 2px;
+    color: white;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+/* nav #search input:active{
+    border-color: linear-gradient(to right, #ff6b4f, #fac147);
+} */
+
+/*CUSTOM CURSON NOT WORKING*/
+
+nav #search input:hover {
+
+    /* cursor: url('C:\Users\rajus\Documents\WebDev\Project Learn by Heart\Images\pencil.svg'), auto; */
+    cursor: url("C:\Users\rajus\Documents\WebDev\Project Learn by Heart\Images\pencil.cur"), auto;
+    /* cursor: zoom-in; */
+
+}
+
+
+.logbtn {
+    margin-left: 50px;
+    padding: 4px 20px;
+    font-weight: bold;
+    /* border: 2px solid #DF2771; */
+    /* font-size: large; */
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    /* transition-delay: 2s; */
+    transition: 0.5s;
+    background: linear-gradient(to left, #ff6b4f, #fac147);
+    color: #fff;
+    cursor: pointer;
+}
+
+.logbtn:hover {
+    background: linear-gradient(to right, #ff6b4f, #fac147);
+    transform: scale(1.3);
+}
+
+/* PAGE */
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 64px;
+    margin-bottom: 60px;
+    position: sticky;
+    align-items: auto;
+}
+
+/* HOME */
+
+.ngcard {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    display: inline-block;
+    background-color: #28293d;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 30px 50px;
+
+}
+
+.ngcard:hover {
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: 1px 1px 6px #0f0f17 inset;
+    /* box-shadow: 2 20px rgba(0,0,0,0.5); */
+}
+
+
+#home .intro {
+    display: inline;
+    width: 40%;
+    /* margin-left: 50px; */
+    padding-left: 50px;
+    margin: 50px;
+    margin-top: 25px;
+}
+
+#home .intro p {
+    text-align: justify;
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+#home #shloka {
+    margin: 30px;
+    /* margin-top: 70px; */
+}
+
+#home #shloka span {
+    display: block;
+    margin: 10px;
+}
+
+#home #progresstab {
+    /* margin: 5px; */
+    width: 85%;
+    margin-left: 0px;
+    margin-top: 10px;
+    height: fit-content;
+    justify-content: center;
+}
+
+.progress {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+
+
+
+#home #suggestion {
+    margin-top: 25px;
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#suggestion a {
+    width: 35%;
+}
+
+/* #ebg{
+    margin-top: 25px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+
+
+.scard,
+.ecard {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    /* border: 2px solid #FA4B37; */
+    background-image: url("/ProjectLearnbyHeart/Images/girl\ reading\ g.gif");
+    /* filter: drop-shadow(100); */
+    /* background-repeat: no-repeat; */
+    /* background-color: #DF2771; */
+    /* text-shadow: 200px 200px red; */
+    /* border: 2px solid red; */
+    color: white;
+    padding: 5px;
+    margin: 20px;
+    height: 15em;
+    box-shadow: 5px 5px 100px #0f0f17 inset, 10px 10px 50px #0f0f17;
+    text-align: center;
+    padding-top: 100px;
+    transition: 0.8s;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black, 4px 4px 5px black, -2px -2px 5px black, 0px 6px 5px black;
+    filter: grayscale(1);
+}
+
+.scard:hover,
+.ecard:hover {
+    box-shadow: none;
+    transform: scale(1.25);
+    box-shadow: 2px 0px 5px rgb(250, 193, 71), 0px 2px 5px #FA4B37, -2px 0px 5px #fac147, 0px -2px 5px #FA4B37,
+        4px 0px 5px #fac147, 0px 4px 5px #FA4B37, -4px 0px 5px #fac147, 0px -4px 5px #FA4B37;
+        
+  
+
+    /* padding-top: 200px; */
+    padding-top: 250px;
+
+    /* text-shadow: 10px 10px 10px black; */
+    font-size: larger;
+    filter: grayscale(0);
+    z-index: 1000;
+    /* padding: none; */
+
+}
+
+/* SUGGESTION CARDS BY ID  */
+#s1 {
+    background-image: url("/ProjectLearnbyHeart/Images/web_dev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#s2 {
+    background-image: url("/ProjectLearnbyHeart/Images/ds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+}
+
+#s3 {
+    background-image: url("/ProjectLearnbyHeart/Images/Algo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#s4 {
+    background-image: url("/ProjectLearnbyHeart/Images/aiml2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+}
+
+
+
+
+
+/* EXPLORE */
+
+#explore {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+#explore #ebg {
+    width: 100%;
+    /* margin: auto; */
+    /* padding: 25px;     */
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 10px;
+    margin: 40px 0px;
+    /* padding: 10px; */
+}
+
+#ebg a {
+    display: inline;
+    width: 20%;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.ecard {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    /* border: 2px solid #FA4B37; */
+    background-image: url("/ProjectLearnbyHeart/Images/home\ school.PNG");
+    filter: drop-shadow(100px);
+    background-repeat: no-repeat;
+    /* background-color: #DF2771; */
+    padding: 5px;
+    margin: 20px;
+    height: 15em;
+    box-shadow: 30px 30px 1000px #0f0f17 inset;
+    text-align: center;
+    padding-top: 100px;
+    transition: 0.8s;
+
+}
+
+
+/* EXPLORE CARDS BY ID  */
+
+#e1 {
+    background-image: url("/ProjectLearnbyHeart/Images/science.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#e2 {
+    background-image: url("/ProjectLearnbyHeart/Images/mathsimg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#e3 {
+    background-image: url("/ProjectLearnbyHeart/Images/aiml.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+}
+
+#e4 {
+    background-image: url("/ProjectLearnbyHeart/Images/history.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+#e5 {
+    background-image: url("/ProjectLearnbyHeart/Images/civics.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#e6 {
+    background-image: url("/ProjectLearnbyHeart/Images/eco3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#e7 {
+    background-image: url("/ProjectLearnbyHeart/Images/langl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#e8 {
+    background-image: url("/ProjectLearnbyHeart/Images/art1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 90%;
+}
+
+
+
+/* copy scard hover for ecard hover here */
+
+/* STORIES */
+
+#stories {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+#sttitle {
+    display: block;
+    width: 100%;
+}
+
+#stleft {
+
+    /* border: 2px solid red; */
+    display: flex;
+    width: 45%;
+    /* margin-top: 20px; */
+    height: fit-content;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    /* padding: 50px; */
+    justify-content: space-evenly;
+}
+
+#sthead {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+#stdis {
+    margin: 20px;
+    width: 100%;
+    text-align: justify;
+    transition: 1s;
+}
+
+#stright {
+    width: 40%;
+    display: flex;
+    height: fit-content;
+}
+
+.stbtnli {
+
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.stbtn {
+    padding: 4px 20px;
+    margin-left: 20px;
+    /* padding: 8px 20px; */
+
+    /* border: 2px solid #DF2771; */
+    /* font-size: large; */
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    /* transition-delay: 2s; */
+    transition: 0.5s;
+    background: transparent;
+
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.stbtn:hover {
+    background: linear-gradient(to left, #ff6b4f, #fac147);
+    font-weight: bold;
+    margin-left: 40px;
+    transform: scale(1.3);
+}
+
+
+/* LEFT STORY  */
+
+
+#stleft {
+    width: 45%;
+    height: 80%;
+
+}
+
+.st1pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story1.webp");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+
+.st2pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story2.jpg");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+.st3pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story3.jpg");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+.st4pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story4.jpg");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+.st5pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story5.jpg");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+.st6pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story6.jpg");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+.st7pic {
+    background-image: url("/ProjectLearnbyHeart/Images/story7.jpg");
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: 1s;
+}
+
+/* VIDEO  */
+
+#videos {
+    display: block;
+    /* height: 1080px; */
+    justify-content: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    /* padding: auto; */
+
+}
+
+#vidcontainer {
+    /* width: 100%; */
+    display: flex;
+    /* border: 2px solid yellow; */
+    padding: 50px 100px;
+    border-radius: 30px;
+    justify-content: center;
+    /* margin: 20px; */
+    margin: auto;
+    margin-top: 35px;
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.videoCard {
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 0;
+    width: fit-content;
+    /* border: 2px solid red; */
+
+}
+
+.carousel {
+    /* border: 2px solid red; */
+    border-radius: 40px;
+}
+
+iframe {
+    border-radius: 30px;
+}
+
+
+/* 
+.carousel-inner{
+    border: 2px solid red;
+}  */
+
+
+/* FEEDBACK */
+
+#contact {
+    display: block;
+    /* height: 1080px; */
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 250px;
+    margin-top: 100px;
+}
+
+
+/* LEFT BOX  */
+.feedbox {
+    display: inline-block;
+    width: 38%;
+    /* margin-top:20px; */
+    margin-left: 130px;
+    margin-right: 50px;
+    margin-top: 30px;
+    /* padding-top: 50px; */
+    /* border: 2px solid slateblue; */
+    position: relative;
+    top: 8px;
+}
+
+.feed {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 540px;
+    border-radius: 10px;
+    justify-content: center;
+    /* box-shadow: inset 0 0 90px rgba(0,0,0,0.6),
+					0 0 80px rgba(0,0,0,0.2); */
+    /* background: rgba(0,0,0,0.4); */
+
+    background-color: #28293d;
+    /* margin: 30px; */
+    border-radius: 10px;
+    /* padding: 30px 50px; */
+
+}
+
+.feed:hover {
+    box-shadow: 1px 1px 6px #0f0f17 inset;
+}
+
+.feed h3 {
+
+    /* border: 2px solid red; */
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.feed form {
+    /* border: 2px solid red; */
+    /* display: block; */
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-bottom: 100px;
+}
+
+.feed form input,
+.feed textarea {
+    text-align: center;
+    display: block;
+    padding: 2px 7px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #2E3D49;
+    background: #fff9;
+    margin: auto;
+    margin-top: 15px;
+    width: 68%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.feed textarea {
+    height: 14em;
+    /* width: 20em; */
+    text-align: left;
+}
+
+.csubmit {
+
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    /* margin-bottom: 50px; */
+    background: linear-gradient(to left, #ff6b4f, #fac147);
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    width: 68%;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    /* transform: scale(0.75); */
+    /* font-size: large; */
+}
+
+.csubmit:hover {
+    background: linear-gradient(to right, #ff6b4f, #fac147);
+    /* font-size: x-large; */
+    /* font-weight: bold; */
+
+    box-shadow: 6px 6px 20px #0f0f17;
+    border-radius: 15px;
+    transform: scale(1.2);
+    width: 55%;
+
+}
+
+/* SLIDER  */
+
+
+
+
+/* RIGHT BOX */
+
+.contactus {
+
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 38%;
+    margin-top: 20px;
+    height: fit-content;
+    margin-left: 40px;
+
+}
+
+.contactus .feed {
+    padding-top: 9px;
+}
+
+/* .contform{
+    display: flex;
+    justify-content: space-around;
+} */
+
+#contactus h3 {
+
+    /* border: 2px solid red; */
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+#messagebox {
+    height: 10em;
+}
+
+
+/* FOOTER  */
+
+footer {
+    color: #E5E8EF;
+    background: #0f0f17;
+    padding: 50px 0;
+}
+
+footer .footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    /* background-color: #FA4B37; */
+}
+
+footer .social-media img {
+    width: 22px;
+}
+
+footer .logo {
+    width: 180px;
+    color: #fff;
+}
+
+footer .social-media a {
+    margin-right: 10px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+footer .right-col h1 {
+    font-size: 26px;
+}
+
+footer .border {
+    width: 110 px;
+    height: 4px;
+    background: linear-gradient(to right, #ff6b4f, #fac147);
+    margin: 2px;
+}
+
+footer .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .txtb {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    background: #343A40;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    min-width: 260px;
+    margin-top: 20px;
+    color: white;
+}
+
+footer .btn {
+    margin-top: 20px;
+    padding: 10px px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: linear-gradient(to right, #ff6b4f, #fac147);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+    transition: 1s;
+}
+
+footer .btn:hover {
+    transform: scale(1.2);
+}
