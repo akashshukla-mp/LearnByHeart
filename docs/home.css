@@ -116,13 +116,13 @@ nav #search input {
 
 /*CUSTOM CURSON NOT WORKING*/
 
-nav #search input:hover {
+/* nav #search input:hover { */
 
     /* cursor: url('C:\Users\rajus\Documents\WebDev\Project Learn by Heart\Images\pencil.svg'), auto; */
-    cursor: url("C:\Users\rajus\Documents\WebDev\Project Learn by Heart\Images\pencil.cur"), auto;
+    /* cursor: url("C:\Users\rajus\Documents\WebDev\Project Learn by Heart\Images\pencil.cur"), auto; */
     /* cursor: zoom-in; */
 
-}
+/* } */
 
 
 .logbtn {
@@ -249,7 +249,7 @@ nav #search input:hover {
     width: 100%;
     border-radius: 20px;
     /* border: 2px solid #FA4B37; */
-    background-image: url("/ProjectLearnbyHeart/Images/girl\ reading\ g.gif");
+    background-image: url("/Images/girl\ reading\ g.gif");
     /* filter: drop-shadow(100); */
     /* background-repeat: no-repeat; */
     /* background-color: #DF2771; */
@@ -290,28 +290,28 @@ nav #search input:hover {
 
 /* SUGGESTION CARDS BY ID  */
 #s1 {
-    background-image: url("/ProjectLearnbyHeart/Images/web_dev.png");
+    background-image: url("/Images/web_dev.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #s2 {
-    background-image: url("/ProjectLearnbyHeart/Images/ds.png");
+    background-image: url("/Images/ds.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 75%;
 }
 
 #s3 {
-    background-image: url("/ProjectLearnbyHeart/Images/Algo.jpg");
+    background-image: url("/Images/Algo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #s4 {
-    background-image: url("/ProjectLearnbyHeart/Images/aiml2.webp");
+    background-image: url("/Images/aiml2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 80%;
@@ -356,7 +356,7 @@ nav #search input:hover {
     width: 100%;
     border-radius: 20px;
     /* border: 2px solid #FA4B37; */
-    background-image: url("/ProjectLearnbyHeart/Images/home\ school.PNG");
+    background-image: url("/Images/home\ school.PNG");
     filter: drop-shadow(100px);
     background-repeat: no-repeat;
     /* background-color: #DF2771; */
@@ -374,28 +374,28 @@ nav #search input:hover {
 /* EXPLORE CARDS BY ID  */
 
 #e1 {
-    background-image: url("/ProjectLearnbyHeart/Images/science.jpg");
+    background-image: url("/Images/science.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #e2 {
-    background-image: url("/ProjectLearnbyHeart/Images/mathsimg2.jpg");
+    background-image: url("/Images/mathsimg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #e3 {
-    background-image: url("/ProjectLearnbyHeart/Images/aiml.webp");
+    background-image: url("/Images/aiml.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 75%;
 }
 
 #e4 {
-    background-image: url("/ProjectLearnbyHeart/Images/history.png");
+    background-image: url("/Images/history.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -403,28 +403,28 @@ nav #search input:hover {
 
 
 #e5 {
-    background-image: url("/ProjectLearnbyHeart/Images/civics.jpg");
+    background-image: url("/Images/civics.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #e6 {
-    background-image: url("/ProjectLearnbyHeart/Images/eco3.avif");
+    background-image: url("/Images/eco3.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #e7 {
-    background-image: url("/ProjectLearnbyHeart/Images/langl.jpg");
+    background-image: url("/Images/langl.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
 #e8 {
-    background-image: url("/ProjectLearnbyHeart/Images/art1.webp");
+    background-image: url("/Images/art1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -529,7 +529,7 @@ nav #search input:hover {
 }
 
 .st1pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story1.webp");
+    background-image: url("/Images/story1.webp");
     border-radius: 20px;
     height: 70%;
     width: 80%;
@@ -541,7 +541,7 @@ nav #search input:hover {
 
 
 .st2pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story2.jpg");
+    background-image: url("/Images/story2.jpg");
     border-radius: 20px;
     height: 70%;
     width: 80%;
@@ -552,7 +552,7 @@ nav #search input:hover {
 }
 
 .st3pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story3.jpg");
+    background-image: url("/Images/story3.jpg");
     border-radius: 20px;
     height: 70%;
     width: 80%;
@@ -563,7 +563,7 @@ nav #search input:hover {
 }
 
 .st4pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story4.jpg");
+    background-image: url("/Images/story4.jpg");
     border-radius: 20px;
     height: 70%;
     width: 80%;
@@ -574,7 +574,7 @@ nav #search input:hover {
 }
 
 .st5pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story5.jpg");
+    background-image: url("/Images/story5.jpg");
     border-radius: 20px;
     height: 70%;
     width: 80%;
@@ -585,7 +585,7 @@ nav #search input:hover {
 }
 
 .st6pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story6.jpg");
+    background-image: url("/Images/story6.jpg");
     border-radius: 20px;
     height: 70%;
     width: 80%;
@@ -596,7 +596,7 @@ nav #search input:hover {
 }
 
 .st7pic {
-    background-image: url("/ProjectLearnbyHeart/Images/story7.jpg");
+    background-image: url("/Images/story7.jpg");
     border-radius: 20px;
     height: 70%;
     width: 80%;

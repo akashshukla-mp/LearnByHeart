@@ -87,7 +87,7 @@ box-shadow: 4px 4px 20px #0f0f17, -4px -4px 20px #0f0f17, 2px 2px 4px #fac147 in
     /* height: fit-content; */
     border-radius: 5px;
     /* border: 2px solid #FA4B37; */
-    background-image: url("/ProjectLearnbyHeart/Images/girl\ reading\ g.gif");
+    background-image: url("/Images/girl\ reading\ g.gif");
     /* filter: drop-shadow(100); */
     /* background-repeat: no-repeat; */
     /* background-color: #DF2771; */
@@ -137,7 +137,7 @@ box-shadow: 4px 4px 20px #0f0f17, -4px -4px 20px #0f0f17, 2px 2px 4px #fac147 in
 
 
 .science{
-    background-image: url("/ProjectLearnbyHeart/Images/science11.PNG");
+    background-image: url("/Images/science11.PNG");
     background-size: cover;
     background-position-x: center;
     filter: opacity(0.75);
@@ -145,7 +145,7 @@ box-shadow: 4px 4px 20px #0f0f17, -4px -4px 20px #0f0f17, 2px 2px 4px #fac147 in
 }
 
 .maths{
-    background-image: url("/ProjectLearnbyHeart/Images/maths14.jpg");
+    background-image: url("/Images/maths14.jpg");
     background-size: cover;
     background-position-x: center;
     filter: opacity(0.75);
@@ -153,7 +153,7 @@ box-shadow: 4px 4px 20px #0f0f17, -4px -4px 20px #0f0f17, 2px 2px 4px #fac147 in
 }
 
 .cs{
-    background-image: url("/ProjectLearnbyHeart/Images/cs11.jpg");
+    background-image: url("/Images/cs11.jpg");
     background-size: cover;
     background-position-x: 45%;
     filter: opacity(0.75);
